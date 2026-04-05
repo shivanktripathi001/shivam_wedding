@@ -74,9 +74,9 @@ export function Footer() {
             className="flex items-center justify-center gap-3 text-2xl md:text-3xl mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            <span className="text-[#FFD700]">शिवम</span>
+            <span className="text-[#FFD700]">Shivam</span>
             <Heart className="fill-white" size={30} />
-            <span className="text-[#FFD700]">शिवानी</span>
+            <span className="text-[#FFD700]">Shivani</span>
           </motion.div>
 
           {/* Bottom text */}

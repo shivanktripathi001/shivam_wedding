@@ -19,10 +19,8 @@ export const translations = {
     eventsTitle: 'Wedding Events',
     events: [
       { title: 'Shubh Tilakotasv & Preetibhoj', date: 'Thursday, 23 April 2026', time: '7:00 PM onwards', venue: 'Sun City Garden, Gadhiya Tola, Chitrakoot Road, Satna (M.P.)' },
-      { title: 'Mandap Chhadan & Matrika Pujan', date: 'Thursday, 23 April 2026', time: 'Evening', venue: 'Sun City Garden, Satna' },
-      { title: 'Haldi, Mehndi & Ladies Sangeet', date: 'Friday, 24 April 2026', time: 'Throughout the day', venue: 'Respective venues' },
+      { title: 'Haldi, Mehndi & Ladies Sangeet', date: 'Friday, 24 April 2026', time: 'Throughout the day', venue: 'Mukhtyaarganj Swami Ji Chowk, Satna' },
       { title: 'Barat Prasthan & Vatabandh (Wedding)', date: 'Saturday, 25 April 2026', time: 'Barat departs at 7:00 PM', venue: 'From Spark Hotel, Panna Road to City Park, Gate No. 2' },
-      { title: 'Vadhu Pravesh', date: 'Sunday, 26 April 2026', time: 'Morning', venue: "Groom's Residence, Mukhtyarganj, Satna" },
     ],
     venueTitle: 'Venue & Location',
     venues: [
@@ -30,7 +28,7 @@ export const translations = {
       { name: 'City Park', address: 'Gate No. 2, Panna Road, Satna, Madhya Pradesh', event: 'Wedding Ceremony (Vatabandh)' },
     ],
     getDirections: 'Get Directions',
-    venueNote: 'Barat will depart from Spark Hotel, Panna Road at 7:00 PM on Saturday, 25th April 2026',
+    venueNote: 'Barat will depart from Home, Mukhtyaar ganj Swami Ji Chowk, Satna at 7:00 PM on Saturday, 25th April 2026',
     venueNoteLabel: 'Note:',
     galleryTitle: 'Photo Gallery',
     sharePhotos: 'Share Your Photos',
@@ -59,10 +57,8 @@ export const translations = {
     eventsTitle: 'विवाह कार्यक्रम',
     events: [
       { title: 'शुभ तिलकोत्सव एवं प्रीतिभोज', date: 'गुरुवार, 23 अप्रैल 2026', time: 'सायं 7:00 बजे से', venue: 'सन सिटी गार्डन, गढ़िया टोला, चित्रकूट रोड, सतना (म.प्र.)' },
-      { title: 'मंडप छादन एवं मातृका पूजन', date: 'गुरुवार, 23 अप्रैल 2026', time: 'सायंकाल', venue: 'सन सिटी गार्डन, सतना' },
-      { title: 'हल्दी, मेहंदी एवं लेडीज संगीत', date: 'शुक्रवार, 24 अप्रैल 2026', time: 'दिनभर', venue: 'संबंधित स्थान' },
+      { title: 'हल्दी, मेहंदी एवं लेडीज संगीत', date: 'शुक्रवार, 24 अप्रैल 2026', time: 'दिनभर', venue: 'मुख्तियारगंज स्वामी जी चौक, सतना' },
       { title: 'बारात प्रस्थान एवं वटबंध (विवाह)', date: 'शनिवार, 25 अप्रैल 2026', time: 'बारात प्रस्थान सायं 7:00 बजे', venue: 'स्पार्क होटल, पन्ना रोड से सिटी पार्क, गेट नं. 2' },
-      { title: 'वधू प्रवेश', date: 'रविवार, 26 अप्रैल 2026', time: 'प्रातःकाल', venue: 'वर निवास, मुख्तियारगंज, सतना' },
     ],
     venueTitle: 'स्थान एवं पता',
     venues: [
