@@ -41,8 +41,15 @@ export function VenueSection() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-[#D4AF37]"
             >
-              {/* Map Embed */}
-              <div className="relative h-64 bg-gray-200">
+              {/* Image / Map */}
+              <div className="relative h-72 bg-gray-200 overflow-hidden">
+                {index === 0 ? (
+                  <img
+                    src="/images/sun_city.jpg"
+                    alt="Sun City Garden"
+                    className="w-full h-full object-contain bg-white"
+                  />
+                ) : (
                 <iframe
                   src={venue.mapUrl}
                   width="100%"
@@ -54,6 +61,7 @@ export function VenueSection() {
                   title={venue.name}
                   className="grayscale hover:grayscale-0 transition-all duration-300"
                 />
+                )}
               </div>
 
               {/* Venue Details */}
