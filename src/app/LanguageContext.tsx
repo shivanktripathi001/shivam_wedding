@@ -8,7 +8,7 @@ export const translations = {
     saveTheDate: 'Save The Date',
     weddingDate: 'Saturday, 25th April 2026',
     days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds',
-    coupleTitle: 'The Couple & Families',
+    coupleTitle: 'The Couple & Family',
     groom: 'The Groom', bride: 'The Bride',
     sonOf: 'Son of', daughterOf: 'Daughter of',
     groomParents: 'Smt. Anita & Shri Omkar Narayan Chaturvedi',
