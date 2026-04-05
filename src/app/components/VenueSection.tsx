@@ -6,10 +6,12 @@ const venueMapData = [
   {
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.123456789!2d80.8306!3d24.5854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM1JzA3LjQiTiA4MMKwNDknNTAuMiJF!5e0!3m2!1sen!2sin!4v1234567890',
     directionsUrl: 'https://www.google.com/maps/search/Sun+City+Garden+Satna+Chitrakoot+Road',
+    date: '23rd April 2026',
   },
   {
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.123456789!2d80.8306!3d24.5854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM1JzA3LjQiTiA4MMKwNDknNTAuMiJF!5e0!3m2!1sen!2sin!4v1234567890',
     directionsUrl: 'https://share.google/zBitA4XwtvoIgR7OJ',
+    date: '25th April 2026',
   },
 ];
 
@@ -45,22 +47,16 @@ export function VenueSection() {
               <div className="relative h-72 bg-gray-200 overflow-hidden">
                 {index === 0 ? (
                   <img
-                    src="/images/sun_city.jpg"
+                    src="/images/Media (8).jpg"
                     alt="Sun City Garden"
                     className="w-full h-full object-contain bg-white"
                   />
                 ) : (
-                <iframe
-                  src={venue.mapUrl}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={venue.name}
-                  className="grayscale hover:grayscale-0 transition-all duration-300"
-                />
+                  <img
+                    src="/images/Media (7).jpg"
+                    alt="City Park"
+                    className="w-full h-full object-contain bg-white"
+                  />
                 )}
               </div>
 
@@ -75,8 +71,13 @@ export function VenueSection() {
                     <p className="text-sm text-gray-600 mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
                       {venue.address}
                     </p>
-                    <div className="inline-block px-3 py-1 bg-[#FFF8E7] text-[#C74665] rounded-full text-xs font-medium">
-                      {venue.event}
+                    <div className="flex items-center gap-2 mt-2">
+                      <div className="inline-block px-3 py-1 bg-[#FFF8E7] text-[#C74665] rounded-full text-xs font-medium">
+                        {venue.event}
+                      </div>
+                      <div className="inline-block px-3 py-1 bg-[#D4AF37]/10 text-[#D4AF37] rounded-full text-xs font-semibold">
+                        📅 {venue.date}
+                      </div>
                     </div>
                   </div>
                 </div>

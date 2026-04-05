@@ -45,25 +45,26 @@ export function CountdownTimer() {
   ];
 
   return (
-    <div className="flex gap-4 md:gap-8 justify-center">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border-2 border-[#D4AF37] px-6 py-4 inline-flex items-center gap-4 md:gap-8"
+    >
       {timeUnits.map((unit, index) => (
-        <motion.div
-          key={unit.label}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.1 }}
-          className="flex flex-col items-center"
-        >
-          <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-xl px-4 py-3 md:px-6 md:py-4 min-w-[70px] md:min-w-[100px] border-2 border-[#D4AF37]">
-            <div className="text-3xl md:text-5xl font-bold text-[#C74665]" style={{ fontFamily: 'Playfair Display, serif' }}>
-              {unit.value}
+        <div key={unit.label} className="flex items-center gap-4 md:gap-8">
+          <div className="flex flex-col items-center">
+            <div className="text-3xl md:text-5xl font-bold text-[#C74665]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              {String(unit.value).padStart(2, '0')}
+            </div>
+            <div className="text-xs md:text-sm text-gray-500 font-medium tracking-wider mt-1" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              {unit.label}
             </div>
           </div>
-          <div className="mt-2 text-xs md:text-sm text-white font-medium tracking-wider" style={{ fontFamily: 'Poppins, sans-serif' }}>
-            {unit.label}
-          </div>
-        </motion.div>
+          {index < timeUnits.length - 1 && (
+            <span className="text-2xl md:text-4xl font-bold text-[#D4AF37] mb-4">:</span>
+          )}
+        </div>
       ))}
-    </div>
+    </motion.div>
   );
 }

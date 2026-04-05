@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
 import Masonry from 'react-responsive-masonry';
-import { X, Upload, ExternalLink } from 'lucide-react';
+import { X, Upload } from 'lucide-react';
 import { useLang } from '../LanguageContext';
 
 const galleryImages = [
@@ -42,7 +42,6 @@ const galleryImages = [
 export function PhotoGallery() {
   const { t } = useLang();
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
-  const [showUploadInfo, setShowUploadInfo] = useState(false);
 
   return (
     <section className="py-20 px-4 bg-white">
@@ -58,35 +57,16 @@ export function PhotoGallery() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-[#C74665] mx-auto rounded-full mb-8" />
           
-          <button
-            onClick={() => setShowUploadInfo(!showUploadInfo)}
+          <a
+            href="https://drive.google.com/drive/folders/1EkOEbxBr95wOeDrIQrd2Lu8TZl4HER7p"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-white rounded-full hover:shadow-xl transition-all transform hover:scale-105"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             <Upload size={20} />
             {t.sharePhotos}
-          </button>
-
-          {showUploadInfo && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mt-4 p-4 bg-[#FFF8E7] rounded-lg max-w-md mx-auto border-2 border-[#D4AF37]"
-            >
-              <p className="text-sm text-gray-700" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                {t.uploadInfo}
-                <br />
-                <a 
-                  href="https://drive.google.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-[#C74665] underline inline-flex items-center gap-1 mt-2"
-                >
-                  {t.openFolder} <ExternalLink size={14} />
-                </a>
-              </p>
-            </motion.div>
-          )}
+          </a>
         </motion.div>
 
         <Masonry columnsCount={3} gutter="16px">
