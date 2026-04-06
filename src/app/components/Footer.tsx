@@ -87,6 +87,10 @@ export function Footer() {
           <div className="mt-8 text-xs text-white/60" style={{ fontFamily: 'Poppins, sans-serif' }}>
             {t.footerCopy}
           </div>
+
+          <div className="mt-4 text-sm text-white/80" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            Made by <span className="text-[#FFD700] font-semibold">ujju</span> for your ❤️ special day
+          </div>
         </motion.div>
       </div>
     </footer>
